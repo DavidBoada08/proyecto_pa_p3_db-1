@@ -21,14 +21,19 @@ public class Tranferencia {
 	
 	@Column(name= "tran_id")
 	private Integer id;
+	
 	@Column(name= "tran_fecha")
 	private LocalDateTime fecha;
+	
 	@Column(name= "tran_origen")
 	private String cuentaOrigen;
+	
 	@Column(name= "tran_destino")
 	private String cuentaDestino;
+	
 	@Column(name= "tran_monto")
 	private BigDecimal monto;
+	
 	@Column(name= "tran_comision")
 	private BigDecimal comision;
 	

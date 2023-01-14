@@ -9,7 +9,7 @@ public interface ITranferenciaService {
 	
 	public void agregar(Tranferencia Tranferencia);
 	public Tranferencia buscar(Integer id);
-	public Tranferencia generar(Cuenta cuenta, BigDecimal monto, BigDecimal comision);
+	public void generar(String origen,String destino, BigDecimal monto);
 
 	
 

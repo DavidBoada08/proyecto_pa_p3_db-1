@@ -29,8 +29,8 @@ public class CuentaServiceImpl implements ICuentaService {
 	public Cuenta buscar(String numero) {
 		
 		// TODO Auto-generated method stub
-		this.cuentaRepo.buscar(numero);
-		return null;
+		
+		return this.cuentaRepo.buscar(numero);
 	}
 
 	@Override
