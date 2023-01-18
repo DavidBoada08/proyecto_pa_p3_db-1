@@ -34,7 +34,7 @@ public class ProyectoPaU2Sc1Application implements CommandLineRunner {
 		Cuenta cuentaDestino = new Cuenta();
 
 		Tranferencia tranferencia = new Tranferencia();
-
+//
 		cuentaOrigen.setNumero("100100100");
 		cuentaOrigen.setCedula("1720030723");
 		cuentaOrigen.setTipo("AHORROS");
