@@ -1,4 +1,4 @@
-package com.example.demo.modelo;
+package com.example.demo.correccion.modelo;
 
 import java.math.BigDecimal;
 
@@ -20,6 +20,8 @@ public class Cuenta {
 	private BigDecimal saldo;
 	@Column(name ="cuen_cedula")
 	private String cedula;
+	
+	//set y get
 	
 	public String getNumero() {
 		return numero;

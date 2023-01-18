@@ -1,4 +1,4 @@
-package com.example.demo.modelo;
+package com.example.demo.correccion.modelo;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

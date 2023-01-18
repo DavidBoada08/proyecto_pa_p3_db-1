@@ -1,9 +1,8 @@
-package com.example.demo.service;
+package com.example.demo.correccion.service;
 
 import java.math.BigDecimal;
 
-import com.example.demo.modelo.Cuenta;
-import com.example.demo.modelo.Tranferencia;
+import com.example.demo.correccion.modelo.Tranferencia;
 
 public interface ITranferenciaService {
 	

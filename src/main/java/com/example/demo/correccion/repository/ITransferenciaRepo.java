@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.example.demo.correccion.repository;
 
-import com.example.demo.modelo.Tranferencia;
+import com.example.demo.correccion.modelo.Tranferencia;
 
 public interface ITransferenciaRepo {
 	

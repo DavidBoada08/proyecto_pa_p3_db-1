@@ -1,13 +1,14 @@
-package com.example.demo.service;
+package com.example.demo.correccion.service;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.modelo.Cuenta;
-import com.example.demo.modelo.Tranferencia;
-import com.example.demo.repository.ITransferenciaRepo;
+import com.example.demo.correccion.modelo.Cuenta;
+import com.example.demo.correccion.modelo.Tranferencia;
+import com.example.demo.correccion.repository.ICuentaRepo;
+import com.example.demo.correccion.repository.ITransferenciaRepo;
 
 @Service
 public class TransferenciaServiceImpl implements ITranferenciaService  {
@@ -17,6 +18,10 @@ public class TransferenciaServiceImpl implements ITranferenciaService  {
 	
 	@Autowired
 	private ICuentaService cuentaService;
+	
+	
+	@Autowired
+	private ICuentaRepo cuentaRepo;
 
 	@Override
 	public void agregar(Tranferencia Tranferencia) {
@@ -35,6 +40,7 @@ public class TransferenciaServiceImpl implements ITranferenciaService  {
 	@Override
 	public void generar(String origen, String destino, BigDecimal monto) {
 		// TODO Auto-generated method stub
+		
 		
 		Cuenta cuentaOrigen = this.cuentaService.buscar(origen);
 		Cuenta cuentaDestino = this.cuentaService.buscar(destino);
@@ -74,10 +80,6 @@ public class TransferenciaServiceImpl implements ITranferenciaService  {
 			System.err.println("\nLA TRANSACCION NO PUDO SER REALIZADA\nRevise el monto e intente de nuevo\n");
 
 		}
-		
-		System.out.println("\n"+cuentaOrigen.toString()+"\n");
-		System.out.println("\n"+cuentaDestino.toString()+"\n");
-		
 		
 		
 		

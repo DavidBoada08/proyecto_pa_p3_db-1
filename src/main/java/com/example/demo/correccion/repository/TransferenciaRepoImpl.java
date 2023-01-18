@@ -1,8 +1,8 @@
-package com.example.demo.repository;
+package com.example.demo.correccion.repository;
 
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.modelo.Tranferencia;
+import com.example.demo.correccion.modelo.Tranferencia;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;

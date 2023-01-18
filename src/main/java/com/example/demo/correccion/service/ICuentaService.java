@@ -1,6 +1,6 @@
-package com.example.demo.service;
+package com.example.demo.correccion.service;
 
-import com.example.demo.modelo.Cuenta;
+import com.example.demo.correccion.modelo.Cuenta;
 
 public interface ICuentaService {
 	

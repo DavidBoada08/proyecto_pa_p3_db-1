@@ -1,10 +1,10 @@
-package com.example.demo.service;
+package com.example.demo.correccion.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.modelo.Cuenta;
-import com.example.demo.repository.ICuentaRepo;
+import com.example.demo.correccion.modelo.Cuenta;
+import com.example.demo.correccion.repository.ICuentaRepo;
 @Service
 public class CuentaServiceImpl implements ICuentaService {
 	
